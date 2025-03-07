@@ -1,0 +1,63 @@
+/* CSS cho overlay (màn nền mờ) */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+/* CSS cho nội dung popup */
+.popup {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo trong popup */
+.popup-logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+/* Nút gọi điện */
+.call-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.call-btn:hover {
+    background: #0056b3;
+}
+
+/* Khi màn hình >= 768px (laptop), popup lớn hơn */
+@media (min-width: 768px) {
+    .popup {
+        width: 500px;
+        padding: 30px;
+    }
+
+    .popup-logo {
+        width: 120px;
+        /* Logo lớn hơn */
+    }
+
+    .call-btn {
+        font-size: 18px;
+        padding: 12px 20px;
+    }
+}
